@@ -1,0 +1,40 @@
+#gallery {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.container {
+    background-size: cover;
+    width: 24%;
+    height: 350px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+
+
+}
+
+@media all and (max-width: 992px){
+    #gallery {
+    width: 100%;
+    position: static;
+    top: 0;
+    transform: translate3d(0, 0, 0);
+    }
+    .container{
+        width: 48%;
+    }
+}
+@media all and (max-width: 480px){
+    
+     #gallery{
+        width: 100%;
+    }
+    .container{
+        width: 100%;
+        display: block;
+        
+    }
+}
